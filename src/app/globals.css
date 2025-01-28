@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*@import url("https://codepen.io/MacEvelly/pen/iJGCw.css"); */
+
+
+.holder {
+  width: 900px;
+  height: 1100px;
+  background-image: url("https://assets.codepen.io/5936329/background-code.png");
+  border-radius: 35px;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0px solid;
+  display: inline-block;
+  margin: auto;
+  padding: 2vmin;
+}
+
+.imageonly {
+  background-image: url("https://assets.codepen.io/5936329/background-code.png");
+}
+
+.Title {
+  font-family: 'Averia Gruesa Libre';
+  font-size: 60px;
+  text-align: center;
+  padding: 30px;
+  color: #b33a6d;
+}
+
+.held {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0px;
+  margin: auto;
+  padding: 2vmin;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 15px;
+}
+
+.button {
+  transition-duration: 0.4s;
+  width: 150px;
+  padding: 10px;
+  background: #7ad0d3;
+  font: 15px Arial, sans-serif;
+  height: 40px;
+  line-height: 42px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 40px;
+  background: #fff;
+  border: px solid #b33a6d;
+  color: #b33a6d;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  color: white;
+  background: #b33a6d;
+}
+
+.btnRandom {}
+
+.btnClear {
+  font: 15px Arial, sans-serif;
+}
+
+.btnDownloadSVG {
+  font: 15px Arial, sans-serif;
+}
+
+#ActivityDIV {
+  padding: 65px;
+  background: white;
+  border: 0px;
+}
+
+#ActivityDIV .swatchHolder {
+  position: absolute;
+  bottom: 0px;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  list-style-type: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Arial;
+  display: inline-block;
+  padding: 15px;
+  width: 260px;
+  border-radius: 35px 35px 0px 0px;
+  color: #232323;
+  background-image: url("https://assets.codepen.io/5936329/background-code.png");
+  border: 0px;
+}
+
+#ActivityDIV .swatchHolder .colorHolder {
+  width: 100%;
+  line-height: 100%;
+  content: 'Color Palette';
+  padding: 10px 0px;
+  margin: 0px auto 15px auto;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#ActivityDIV .swatchHolder li:not(.colorHolder) {
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#ActivityDIV svg {
+  width: 100%;
+  display: inline-block;
+}
+
+#ActivityDIV svg path {
+  cursor: pointer;
+}
